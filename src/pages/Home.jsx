@@ -45,7 +45,7 @@ const Home = () => {
                   <br />
                   <Typography>Email: {email}</Typography>
                   <br />
-                  <Typography>User Login: {userLogin}</Typography>
+                  <Typography>UserLogin: {userLogin}</Typography>
                   <br />
                 </Box>
               );
