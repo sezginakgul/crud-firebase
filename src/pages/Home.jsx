@@ -66,7 +66,7 @@ const Home = () => {
               color="success"
               sx={{ width: "400px" }}
             >
-              Edit
+              Update User
             </Button>
             <UpdateModal open={open} setOpen={setOpen} />
           </>

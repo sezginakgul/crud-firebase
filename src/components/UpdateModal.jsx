@@ -78,7 +78,7 @@ const UpdateModal = ({ open, setOpen }) => {
               onClick={handleSave}
               sx={{ display: "block", margin: "auto" }}
             >
-              Save
+              Save User
             </Button>
           </Box>
         </Fade>
