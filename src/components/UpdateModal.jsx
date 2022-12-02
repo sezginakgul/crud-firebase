@@ -63,7 +63,7 @@ const UpdateModal = ({ open, setOpen }) => {
                   <TextField
                     fullWidth
                     name="email"
-                    label="email"
+                    label="Email"
                     margin="dense"
                     defaultValue={email}
                     onChange={handleChange}
@@ -72,6 +72,7 @@ const UpdateModal = ({ open, setOpen }) => {
               );
             })}
             <Button
+              fullWidth
               variant="contained"
               color="success"
               onClick={handleSave}

@@ -18,6 +18,9 @@ const Home = () => {
 
   return (
     <>
+      <Typography variant="h4" mt={1} align="center">
+        -- Firebase Authentication --
+      </Typography>
       {!currentUser && (
         <Box
           sx={{
@@ -31,7 +34,7 @@ const Home = () => {
           There are no registered users. Please registered.
         </Box>
       )}
-      <Box width="80vw" sx={{ m: "auto", textAlign: "center", p: 3 }}>
+      <Box sx={{ m: "auto", textAlign: "center", p: 3 }}>
         {currentUser && (
           <>
             {data?.map((item) => {
@@ -40,7 +43,7 @@ const Home = () => {
                 <Box
                   key={id}
                   sx={{
-                    margin: "1rem auto 1rem",
+                    margin: " 0 auto 1rem",
                     width: "400px",
                     border: "2px solid grey",
                     borderRadius: "10px",
@@ -61,6 +64,7 @@ const Home = () => {
               variant="contained"
               onClick={() => setOpen(true)}
               color="success"
+              sx={{ width: "400px" }}
             >
               Edit
             </Button>
