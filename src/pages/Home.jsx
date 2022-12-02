@@ -31,22 +31,28 @@ const Home = () => {
           There are no registered users. Please registered.
         </Box>
       )}
-      <Box
-        width="80vw"
-        sx={{ width: "100vh", m: "auto", textAlign: "center", p: 3 }}
-      >
+      <Box width="80vw" sx={{ m: "auto", textAlign: "center", p: 3 }}>
         {currentUser && (
           <>
             {data?.map((item) => {
               const { id, username, email, userLogin } = item;
               return (
-                <Box key={id}>
+                <Box
+                  key={id}
+                  sx={{
+                    margin: "1rem auto 1rem",
+                    width: "400px",
+                    border: "2px solid grey",
+                    borderRadius: "10px",
+                    backgroundColor: "grey",
+                    color: "white",
+                  }}
+                >
                   <Typography>UserName: {username}</Typography>
-                  <br />
+
                   <Typography>Email: {email}</Typography>
-                  <br />
+
                   <Typography>UserLogin: {userLogin}</Typography>
-                  <br />
                 </Box>
               );
             })}

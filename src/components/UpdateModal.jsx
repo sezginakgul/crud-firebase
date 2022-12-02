@@ -14,9 +14,9 @@ const style = {
   transform: "translate(-50%, -50%)",
   width: 400,
   bgcolor: "background.paper",
-  border: "2px solid #000",
   boxShadow: 24,
   p: 4,
+  borderRadius: 1,
 };
 
 const UpdateModal = ({ open, setOpen }) => {
@@ -54,12 +54,14 @@ const UpdateModal = ({ open, setOpen }) => {
               return (
                 <Box key={id}>
                   <TextField
+                    fullWidth
                     name="username"
                     label="UserName"
                     defaultValue={username}
                     onChange={handleChange}
                   />
                   <TextField
+                    fullWidth
                     name="email"
                     label="email"
                     margin="dense"
@@ -69,7 +71,12 @@ const UpdateModal = ({ open, setOpen }) => {
                 </Box>
               );
             })}
-            <Button variant="contained" color="success" onClick={handleSave}>
+            <Button
+              variant="contained"
+              color="success"
+              onClick={handleSave}
+              sx={{ display: "block", margin: "auto" }}
+            >
               Save
             </Button>
           </Box>
